@@ -63,7 +63,7 @@ header button:hover{
 }
 
 .content{
-    padding-top: 10%;
+    padding-top: 5%;
     text-align: center;
 }
 a{
@@ -74,7 +74,7 @@ form{
     display: inline-block;
 }
 .options{
-    margin-top: 1.2vh;
+    margin-top: 20px;
 }
 .opt button{
     margin-left: 5px;
