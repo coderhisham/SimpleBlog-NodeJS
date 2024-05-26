@@ -15,10 +15,6 @@ app.listen(port, () => {
   console.log(`Listening at Port ${port}`);
 });
 
-app.get("/", (req, res) => {
-  res.render("landing.ejs");
-});
-
 let posts = [
   {
     id: uuidv4(),
@@ -36,6 +32,10 @@ let posts = [
     content: "I Loves Drawing!!",
   },
 ];
+
+app.get("/", (req, res) => {
+  res.render("landing.ejs");
+});
 
 app.get("/posts", (req, res) => {
   res.render("index.ejs", { posts });
