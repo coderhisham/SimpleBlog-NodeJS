@@ -16,7 +16,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.redirect("/posts");
 });
 
 let posts = [
