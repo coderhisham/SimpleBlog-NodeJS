@@ -16,7 +16,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.redirect("/posts");
+  res.render("landing.ejs");
 });
 
 let posts = [
